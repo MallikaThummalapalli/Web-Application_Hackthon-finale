@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Spectrum — Education, Business, Healthcare, Travel, Social & Pros/Cons</title>
+  <meta name="description" content="A modern, responsive single‑page web app showcasing AI across education, business, healthcare, travel, social media, plus pros and cons." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <span class="brand-logo" aria-hidden="true"></span>
+        <span>AI Spectrum</span>
+      </a>
+      <nav>
+        <button class="menu-btn toggle" aria-label="Toggle menu">☰</button>
+        <ul id="navList" aria-label="Primary">
+          <li><a href="#education">Education</a></li>
+          <li><a href="#business">Business</a></li>
+          <li><a href="#healthcare">Healthcare</a></li>
+          <li><a href="#travel">Travel</a></li>
+          <li><a href="#social">Social Media</a></li>
+          <li><a href="#proscons">Pros & Cons</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="toggle" aria-label="Toggle theme" title="Toggle theme">🌙</button>
+        <a href="#proscons" class="btn btn-cta">Big Picture</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero container">
+      <div class="hero-grid">
+        <div>
+          <span class="chip">Future‑Ready</span>
+          <h1>Explore Artificial Intelligence across life, work, and society.</h1>
+          <p>From smart classrooms to precision medicine, from travel copilots to safer social platforms—this app tours the practical face of AI. Scroll, learn, and interact.</p>
+          <div class="badges">
+            <span class="chip">Ethics‑aware</span>
+            <span class="chip">Human‑centered</span>
+            <span class="chip">Open to debate</span>
+          </div>
+          <div class="cta-row">
+            <a href="#education" class="btn">Start with Education →</a>
+            <a href="#proscons" class="btn btn-outline">Jump to Pros & Cons</a>
+          </div>
+          <div class="stats">
+            <div class="stat"><div class="num" id="statUsecases">25+</div><div class="cap">Use cases</div></div>
+            <div class="stat"><div class="num" id="statSectors">5</div><div class="cap">Sectors</div></div>
+            <div class="stat"><div class="num" id="statMinutes">~3 min</div><div class="cap">To skim</div></div>
+          </div>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <svg viewBox="0 0 600 380" role="img" aria-label="Abstract AI visualization" class="ai-visual">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6aa1ff"/>
+                <stop offset="50%" stop-color="#7effd4"/>
+                <stop offset="100%" stop-color="#ff6ad5"/>
+              </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="600" height="380" rx="22" fill="url(#g1)" opacity="0.12"/>
+            <g class="nodes"></g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="container reveal">
+      <div class="section-head">
+        <h2>Education</h2>
+        <p class="section-desc">Personalized learning, automated assessment, and accessibility.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <span class="chip pill">Adaptive Learning</span>
+          <h3>Personalized Paths</h3>
+          <p>AI analyzes progress to adjust difficulty, recommend content, and close skill gaps.</p>
+        </article>
+        <article class="card">
+          <span class="chip pill">Assessment</span>
+          <h3>Smart Feedback</h3>
+          <p>Automated grading for quizzes and structured answers with rubric‑based feedback.</p>
+        </article>
+        <article class="card">
+          <span class="chip pill">Accessibility</span>
+          <h3>Assistive Tools</h3>
+          <p>Speech‑to‑text, text‑to‑speech, captioning, and dyslexia‑friendly formatting.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Business -->
+    <section id="business" class="container reveal">
+      <div class="section-head">
+        <h2>Business</h2>
+        <p class="section-desc">Automation, insights, and faster decision‑making.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <span class="chip pill">RPA</span>
+          <h3>Process Automation</h3>
+          <p>Bots handle repetitive tasks—invoice processing, data entry, KYC verification.</p>
+        </article>
+        <article class="card">
+          <span class="chip pill">Forecasting</span>
+          <h3>Demand & Sales</h3>
+          <p>Time‑series models predict demand, optimize inventory, and reduce stockouts.</p>
+        </article>
+        <article class="card">
+          <span class="chip pill">CX</span>
+          <h3>Customer Support</h3>
+          <p>AI copilots suggest replies, summarize chats, and escalate complex issues.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Healthcare -->
+    <section id="healthcare" class="container reveal">
+      <div class="section-head">
+        <h2>Healthcare</h2>
+        <p class="section-desc">Earlier diagnosis, better triage, and precision therapy.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <span class="chip pill">Imaging</span>
+          <h3>Clinical Decision Support</h3>
+          <p>Models flag anomalies in X‑rays, MRIs, and CT scans to assist radiologists.</p>
+        </article>
+        <article class="card">
+          <span class="chip pill">Triage</span>
+          <h3>Virtual Symptom Checker</h3>
+          <p>Guides patients to urgent care vs. home care with clear next steps.</p>
+        </article>
+        <article class="card">
+          <span class="chip pill">Genomics</span>
+          <h3>Personalized Medicine</h3>
+          <p>Treatment recommendations based on biomarkers and patient history.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Travel -->
+    <section id="travel" class="container reveal">
+      <div class="section-head">
+        <h2>Travel</h2>
+        <p class="section-desc">Planning, optimization, and real‑time assistance.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <span class="chip pill">Itineraries</span>
+          <h3>Smart Planning</h3>
+          <p>Generate personalized trips—interests, budget, season, and travel time.</p>
+        </article>
+        <article class="card">
+          <span class="chip pill">Ops</span>
+          <h3>Route Optimization</h3>
+          <p>Airlines and logistics optimize routes, fuel, and on‑time performance.</p>
+        </article>
+        <article class="card">
+          <span class="chip pill">Assist</span>
+          <h3>Real‑Time Copilots</h3>
+          <p>Translate, summarize local tips, and alert about delays or disruptions.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Social Media -->
+    <section id="social" class="container reveal">
+      <div class="section-head">
+        <h2>Social Media</h2>
+        <p class="section-desc">Content tools, moderation, and safety.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <span class="chip pill">Creation</span>
+          <h3>Content Generation</h3>
+          <p>Caption suggestions, clip editing assistance, and topic ideation.</p>
+        </article>
+        <article class="card">
+          <span class="chip pill">Moderation</span>
+          <h3>Safety Filters</h3>
+          <p>Detects spam, hate speech, and deepfake risks; escalates to humans.</p>
+        </article>
+        <article class="card">
+          <span class="chip pill">Analytics</span>
+          <h3>Trend Insights</h3>
+          <p>Finds audience segments, optimal posting windows, and brand sentiment.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Pros & Cons -->
+    <section id="proscons" class="container reveal">
+      <div class="section-head">
+        <h2>Pros & Cons of AI</h2>
+        <p class="section-desc">A balanced view—power and pitfalls.</p>
+      </div>
+      <div class="proscons">
+        <div class="pc">
+          <h3>✅ Pros</h3>
+          <ul>
+            <li>Efficiency: automates repetitive work and reduces human error.</li>
+            <li>Scale: handles vast data to surface patterns and insights.</li>
+            <li>Accessibility: language, vision, and mobility assistance.</li>
+            <li>Innovation: new products, services, and scientific discovery.</li>
+          </ul>
+        </div>
+        <div class="pc">
+          <h3>⚠️ Cons</h3>
+          <ul>
+            <li>Bias & fairness risks from skewed data or design.</li>
+            <li>Privacy & security concerns with sensitive information.</li>
+            <li>Job displacement without reskilling strategies.</li>
+            <li>Over‑reliance: hallucinations and lack of oversight.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cta-center">
+        <button class="btn" id="exportBtn">Export Section as PNG</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">Built for learning and discussion. <span id="year"></span></div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
